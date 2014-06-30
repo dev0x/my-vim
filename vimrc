@@ -13,7 +13,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set nosmarttab
-set expandtab
+set noexpandtab
 
 "encoding - can't live with it, can't live without it
 set encoding=utf-8
