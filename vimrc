@@ -26,20 +26,24 @@ set t_ti= t_te=
 
 " --- yay colors! yay!
 "set background=light
-colorscheme distinguished
+"colorscheme distinguished
 "colorscheme flatcolor
-"colorscheme dev0x
+"colorscheme busybee 
+"colorscheme gotham 
+colorscheme dev0x
 "colorscheme solarized
 "let g:solarized_visibility="high"
 "let g:solarized_termcolors=256
 
 " ---  powerline patched fonts
 let g:airline_powerline_fonts = 1
+set laststatus=2 
+let g:airline#extensions#tabline#enabled = 1
 
 set t_Co=256
 "set fillchars=stl:\ ,stlnc:\ " Caution: trailing space
 "highlight clear SignColumn  "clear colors for the git gutter
-highlight VertSplit cterm=none "remove background color on the vert split and reset back to |
+highlight VertSplit cterm=none " remove background color on the vert split and reset back to |
 
 " --- toggle mode for pasting mapped to f6
 set pastetoggle=<F6>
@@ -57,6 +61,11 @@ map <right> <nop>
 " --- Cartography aka maps!
 map <F1> <C-w>w
 nmap :NT :NERDTree
-nmap <silent> <F8> :NERDTreeToggle<CR>
 nmap <silent> <F4> :set invrnu<CR>
+nmap <silent> <F6> :NERDTreeToggle<CR>
+nmap <silent> <F7> :TagbarToggle<CR>
 noremap <Leader>W :w !sudo tee > /dev/null %
+
+let g:vdebug_options = {}
+let g:vdebug_options["port"] = 9000
+"let g:vdebug_options["path_maps"] = { "/web/html/ubiquity/UB4": "/home/mracine/work/ubiquity/ubiquityV4" }
