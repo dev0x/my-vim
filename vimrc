@@ -37,13 +37,16 @@ colorscheme dev0x
 
 " ---  powerline patched fonts
 let g:airline_powerline_fonts = 1
-set laststatus=2 
 let g:airline#extensions#tabline#enabled = 1
+set laststatus=2 
 
 set t_Co=256
-"set fillchars=stl:\ ,stlnc:\ " Caution: trailing space
+"set fillchars=stl:\ ,stlnc:\ 
 "highlight clear SignColumn  "clear colors for the git gutter
-highlight VertSplit cterm=none " remove background color on the vert split and reset back to |
+highlight VertSplit cterm=none "remove background color on the vert split and reset back to |
+
+"let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+"let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
 " --- toggle mode for pasting mapped to f6
 set pastetoggle=<F6>
