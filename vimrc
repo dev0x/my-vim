@@ -30,7 +30,8 @@ set t_ti= t_te=
 "colorscheme flatcolor
 "colorscheme busybee 
 "colorscheme gotham 
-colorscheme dev0x
+"colorscheme dev0x
+colorscheme lucid
 "colorscheme solarized
 "let g:solarized_visibility="high"
 "let g:solarized_termcolors=256
@@ -45,8 +46,6 @@ set t_Co=256
 "highlight clear SignColumn  "clear colors for the git gutter
 highlight VertSplit cterm=none " remove background color on the vert split and reset back to |
 
-" --- toggle mode for pasting mapped to f6
-set pastetoggle=<F6>
 set ttyfast 
 
 " --- leaderbean
@@ -60,9 +59,10 @@ map <right> <nop>
 	    
 " --- Cartography aka maps!
 map <F1> <C-w>w
+map <F9> :!psql -d mr-db < % <BAR> less
 nmap :NT :NERDTree
 nmap <silent> <F4> :set invrnu<CR>
-nmap <silent> <F6> :NERDTreeToggle<CR>
+"nmap <silent> <F6> :NERDTreeToggle<CR>
 nmap <silent> <F7> :TagbarToggle<CR>
 noremap <Leader>W :w !sudo tee > /dev/null %
 
