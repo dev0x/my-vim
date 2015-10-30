@@ -26,8 +26,15 @@ set showcmd
 set t_ti= t_te= 
 
 " --- yay colors! yay!
-colorscheme dev0x
-"colorscheme lucid
+"set background=light
+"colorscheme distinguished
+"colorscheme flatcolor
+"colorscheme busybee 
+"colorscheme gotham 
+"colorscheme dev0x
+colorscheme lucid
+"colorscheme solarized
+
 " ---  powerline patched fonts
 let g:airline_powerline_fonts = 1
 set laststatus=2 
@@ -36,8 +43,6 @@ let g:airline#extensions#tabline#enabled = 1
 set t_Co=256
 highlight VertSplit cterm=none "remove background color on the vert split and reset back to |
 
-" --- toggle mode for pasting mapped to f6
-set pastetoggle=<F6>
 set ttyfast 
 
 " --- leaderbean
@@ -52,10 +57,11 @@ map <right> <nop>
 	    
 " --- Cartography aka maps!
 map <F1> <C-w>w
-nmap :NT :NERDTree
-"nmap <silent> <F4> :set invrnu<CR>
-"nmap <silent> <F6> :NERDTreeToggle<CR>
-"nmap <silent> <F7> :TagbarToggle<CR>
+map <F9> :!psql -d mr-db < % <BAR> less
+nmap :nt :NERDTree
+nmap :nT :NERDTreeToggle
+nmap <silent> <F4> :set invrnu<CR>
+nmap <silent> <F7> :TagbarToggle<CR>
 noremap <Leader>W :w !sudo tee > /dev/null %
 
 let g:vdebug_options = {}
