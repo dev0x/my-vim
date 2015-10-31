@@ -5,7 +5,7 @@ filetype plugin indent on
 
 "this was for older versions of vi
 set nocompatible
-set backupdir=/home/mracine/.config/nvim/
+set backupdir=~/.config/nvim/
 
 "tabs, essentials
 set more
