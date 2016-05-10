@@ -14,7 +14,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set nosmarttab
-set noexpandtab
+set expandtab
 set clipboard=unnamed
 
 "encoding - can't live with it, can't live without it
