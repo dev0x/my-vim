@@ -65,7 +65,6 @@ noremap <Leader>W :w !sudo tee > /dev/null %
 
 let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
-"let g:vdebug_options["path_maps"] = { "/web/html/ubiquity/UB4": "/home/mracine/work/ubiquity/ubiquityV4" }
 
 "give us nice EOL (end of line) characters
 set list
