@@ -10,9 +10,9 @@ set backupdir=~/.config/nvim/
 "tabs, essentials
 set more
 set number
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set nosmarttab
 set expandtab
 set clipboard+=unnamedplus "ctrl+c in other programs and p into vim and y in vim to copy to clipboard
@@ -34,9 +34,9 @@ set t_ti= t_te=
 "colorscheme gotham
 "colorscheme dev0x
 "colorscheme lucid
-colorscheme jellybeans
+"colorscheme jellybeans
+colorscheme lxvc
 "colorscheme solarized
-
 " ---  powerline patched fonts
 let g:airline_powerline_fonts = 1
 set laststatus=2
@@ -71,3 +71,6 @@ set list
 set showbreak=↪\ 
 set listchars=tab:▸\ ,eol:¬,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 "set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+
+"set underscore to 'act' like as a word boundary - but isn't one
+set iskeyword-=_
